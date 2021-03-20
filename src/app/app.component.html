@@ -13,9 +13,11 @@
 </div> -->
 
 
-<div [ngClass]="{
+<!-- <div [ngClass]="{
   red: backToggle,
   blue: !backToggle
 }">
 
-</div>
+</div> -->
+
+<div [class.blue]="backToggle" [class.red]="!backToggle"></div>
