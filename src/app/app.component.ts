@@ -57,4 +57,8 @@ export class AppComponent {
       content: "I am starting learning angular right now and nobody can stop me."
     }
   ]
+
+  addPost(event: any) {
+
+  }
 }
