@@ -26,3 +26,9 @@
 <ng-template #blueDiv>
     <div class="blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, totam!</div>
 </ng-template> -->
+
+<div [ngSwitch]="Toggle">
+    <p *ngSwitchCase="true" class="red">Lorem, ipsum.</p>
+    <p *ngSwitchCase="false" class="blue">Lorem, dolor.</p>
+    <p *ngSwitchDefault>Lorem, dolor.</p>
+</div>
