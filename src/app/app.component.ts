@@ -9,22 +9,23 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
-  elems = [
-    {
-      name: 'Alex',
-      lname: 'Lee'
-    },
-    {
-      name: 'Ruslan',
-      lname: 'Bakhyshev'
-    },
-    {
-      name: 'Dastan',
-      lname: 'Otarkhan'
-    },
-    {
-      name: 'Nurbol',
-      lname: 'Kalzhigitov'
-    }
-  ];
+  // elems = [
+  //   {
+  //     name: 'Alex',
+  //     lname: 'Lee'
+  //   },
+  //   {
+  //     name: 'Ruslan',
+  //     lname: 'Bakhyshev'
+  //   },
+  //   {
+  //     name: 'Dastan',
+  //     lname: 'Otarkhan'
+  //   },
+  //   {
+  //     name: 'Nurbol',
+  //     lname: 'Kalzhigitov'
+  //   }
+  // ];
+  now: Date = new Date();
 }
