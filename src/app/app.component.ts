@@ -9,5 +9,22 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
-  Toggle = true;
+  elems = [
+    {
+      name: 'Alex',
+      lname: 'Lee'
+    },
+    {
+      name: 'Ruslan',
+      lname: 'Bakhyshev'
+    },
+    {
+      name: 'Dastan',
+      lname: 'Otarkhan'
+    },
+    {
+      name: 'Nurbol',
+      lname: 'Kalzhigitov'
+    }
+  ];
 }

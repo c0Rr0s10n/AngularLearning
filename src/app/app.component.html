@@ -1,6 +1,6 @@
 <h1>Directives learning</h1>
 
-<button (click)="Toggle = !Toggle">Change color</button>
+<!-- <button (click)="Toggle = !Toggle">Change color</button> -->
 
 <!-- <div [ngStyle]="{
   width: '350px',
@@ -27,8 +27,14 @@
     <div class="blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, totam!</div>
 </ng-template> -->
 
-<div [ngSwitch]="Toggle">
+<!-- <div [ngSwitch]="Toggle">
     <p *ngSwitchCase="true" class="red">Lorem, ipsum.</p>
     <p *ngSwitchCase="false" class="blue">Lorem, dolor.</p>
     <p *ngSwitchDefault>Lorem, dolor.</p>
-</div>
+</div> -->
+
+<ul>
+    <li *ngFor="let elem of elems; let counter = index">
+        {{counter+1}} {{elem.name}} {{elem.lname}}
+    </li>
+</ul>
