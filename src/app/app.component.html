@@ -1,8 +1,8 @@
 <h1>Directives learning</h1>
 
-<!-- <button (click)="backToggle = !backToggle">Change color</button>
+<button (click)="backToggle = !backToggle">Change color</button>
 
-<div [ngStyle]="{
+<!-- <div [ngStyle]="{
   width: '350px',
   height: '350px',
   border: '3px solid #ccc',
@@ -11,3 +11,11 @@
 }">
 
 </div> -->
+
+
+<div [ngClass]="{
+  red: backToggle,
+  blue: !backToggle
+}">
+
+</div>
