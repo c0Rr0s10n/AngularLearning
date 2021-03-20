@@ -1,6 +1,6 @@
 <h1>Directives learning</h1>
 
-<button (click)="backToggle = !backToggle">Change color</button>
+<button (click)="Toggle = !Toggle">Change color</button>
 
 <!-- <div [ngStyle]="{
   width: '350px',
@@ -20,4 +20,9 @@
 
 </div> -->
 
-<div [class.blue]="backToggle" [class.red]="!backToggle"></div>
+<!-- <div [class.blue]="backToggle" [class.red]="!backToggle"></div> -->
+
+<!-- <div *ngIf="Toggle; else blueDiv" class="red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, modi!</div>
+<ng-template #blueDiv>
+    <div class="blue">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, totam!</div>
+</ng-template> -->
