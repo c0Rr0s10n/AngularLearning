@@ -58,7 +58,5 @@ export class AppComponent {
     }
   ]
 
-  addPost(event: any) {
 
-  }
 }
