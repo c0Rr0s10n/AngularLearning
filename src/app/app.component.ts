@@ -1,6 +1,11 @@
 
 import { Component } from '@angular/core';
 
+export interface Post {
+ title: string
+ author: string
+ content: string
+}
 
 @Component({
   selector: 'app-root',
@@ -27,5 +32,29 @@ export class AppComponent {
   //     lname: 'Kalzhigitov'
   //   }
   // ];
-  now: Date = new Date();
+
+  // now: Date = new Date();
+
+  posts: Post[] = [
+    {
+      title: "Starting learning angular",
+      author: "Alex Lee",
+      content: "I am starting learning angular right now and nobody can stop me."
+    },
+    {
+      title: "Starting learning angular",
+      author: "Alex Lee",
+      content: "I am starting learning angular right now and nobody can stop me."
+    },
+    {
+      title: "Starting learning angular",
+      author: "Alex Lee",
+      content: "I am starting learning angular right now and nobody can stop me."
+    },
+    {
+      title: "Starting learning angular",
+      author: "Alex Lee",
+      content: "I am starting learning angular right now and nobody can stop me."
+    }
+  ]
 }
