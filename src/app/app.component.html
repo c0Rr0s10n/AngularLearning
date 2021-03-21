@@ -3,4 +3,11 @@
 <app-postform (onAdd)="updatePostList($event)"></app-postform>
 <hr>
 <h2>Posts:</h2>
-<app-post *ngFor="let post of posts" [post]="post"></app-post>
+
+
+<app-post *ngFor="let post of posts" [post]="post">
+    <small *ngIf="post.content.length > 10; else short">Long post</small>
+    <ng-template #short>
+        Small post
+    </ng-template>
+</app-post>
