@@ -1,0 +1,22 @@
+.form-control {
+    display: block;
+    font-size: 20px;
+    width: 200px;
+    height: 25px;
+}
+
+.form-control-btn {
+    display: block;
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 0px solid white;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    cursor: pointer;
+}
+
+.form-control-btn:hover {
+    background-color: rgb(71, 71, 71);
+}

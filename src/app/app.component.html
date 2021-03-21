@@ -1,0 +1,6 @@
+<h1>Learning how to pass forms to a components</h1>
+
+<app-postform (onAdd)="updatePostList($event)"></app-postform>
+<hr>
+<h2>Posts:</h2>
+<app-post *ngFor="let post of posts" [post]="post"></app-post>
