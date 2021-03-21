@@ -15,7 +15,6 @@ export class PostComponent implements OnInit, OnDestroy{
   }
 
   constructor() {
-     console.log('constructor')
 }
 
 
