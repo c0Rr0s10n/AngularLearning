@@ -1,6 +1,6 @@
 <h1>Learning how to pass forms to a components</h1>
 
-<app-postform (onAdd)="updatePostList($event)"></app-postform>
+<app-postform (onDeletePosts)="deletePosts($event)" (onAdd)="updatePostList($event)"></app-postform>
 <hr>
 <h2>Posts:</h2>
 

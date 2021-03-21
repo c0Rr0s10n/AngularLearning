@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { AfterContentInit, Component, DoCheck, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { Post } from '../app.component';
 
 @Component({
@@ -6,7 +6,7 @@ import { Post } from '../app.component';
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.scss']
 })
-export class PostComponent implements OnInit {
+export class PostComponent implements OnInit, OnDestroy{
 
   @Input() post: Post = {
     title: '',
@@ -14,9 +14,17 @@ export class PostComponent implements OnInit {
     content: ''
   }
 
-  constructor() { }
+  constructor() {
+     console.log('constructor')
+}
+
+
 
   ngOnInit(): void {
+  }
+
+  ngOnDestroy(): void{
+    console.log("Post has been destroyed")
   }
 
 }

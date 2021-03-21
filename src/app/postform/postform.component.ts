@@ -10,6 +10,8 @@ export class PostformComponent implements OnInit {
 
   @Output() onAdd: EventEmitter<Post> = new EventEmitter<Post>()
 
+  @Output() onDeletePosts: EventEmitter<Post[]> = new EventEmitter<Post[]>()
+
   @ViewChild('titleInput') inputRef: ElementRef | undefined
 
   title: string = ''
@@ -38,5 +40,9 @@ export class PostformComponent implements OnInit {
 
   focusTitle() {
     this.inputRef?.nativeElement.focus()
+  }
+
+  deletePosts(){
+    this.onDeletePosts.emit([]);
   }
 }

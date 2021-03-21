@@ -39,4 +39,8 @@ export class AppComponent {
   updatePostList(post: Post){
     this.posts.unshift(post)
   }
+
+  deletePosts(posts: Post[]){
+    this.posts = posts
+  }
 }
